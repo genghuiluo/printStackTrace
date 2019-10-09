@@ -1,0 +1,30 @@
+{
+  "name": "printStackTrace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gitbook": "^2.6.9",
+    "gitbook-cli": "^2.3.2",
+    "gitbook-plugin-back-to-top-button": "^0.1.4",
+    "gitbook-plugin-expandable-chapters": "^0.2.0",
+    "gitbook-plugin-multipart": "^0.3.0",
+    "gitbook-plugin-search-pro": "^2.0.2",
+    "gitbook-plugin-splitter": "0.0.8",
+    "paypal-scripts": "^0.50.1"
+  },
+  "scripts": {
+    "prepub": "./node_modules/.bin/gitbook build . .gh-pages",
+    "local": "./node_modules/.bin/gitbook serve",
+    "pub": "./node_modules/.bin/paypal-scripts gh-pages",
+    "clean": "./node_modules/.bin/paypal-scripts clean && rm package-lock.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:genghuiluo/printStackTrace.git"
+  },
+  "keywords": [],
+  "author": "Mark Luo",
+  "license": "NA"
+}

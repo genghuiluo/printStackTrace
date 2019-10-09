@@ -1,0 +1,22 @@
+{
+    "title": "Gitbook Demo",
+    "plugins": [
+            "back-to-top-button",
+            "expandable-chapters",
+            "-lunr", "-search", "search-pro",
+	    "multipart",
+	    "splitter"
+    ],
+    "links": {
+        "sidebar": {
+            "Star on Github": "https://github.com/genghuiluo/printStackTrace"
+        }
+    },
+    "pluginsConfig": {
+        "fontsettings": {
+            "theme": "night",
+            "family": "serif",
+            "size": 3
+        }
+    }
+}
