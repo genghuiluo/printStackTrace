@@ -1,0 +1,15 @@
+.page-inner {
+    max-width: 1000px;
+}
+
+li.chapter > a {
+    padding-left: 40px !important;
+}
+
+li[data-level="1.1"] > a {
+    padding-left: 30px !important;
+}
+
+li.header {
+    font-weight: 600;
+}

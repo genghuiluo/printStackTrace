@@ -14,9 +14,9 @@
     },
     "pluginsConfig": {
         "fontsettings": {
-            "theme": "night",
-            "family": "serif",
-            "size": 3
+            "theme": "white",
+            "family": "sans",
+            "size": 2 
         }
     }
 }
