@@ -15,7 +15,7 @@
     "paypal-scripts": "^0.50.1"
   },
   "scripts": {
-    "prepub": "./node_modules/.bin/gitbook build . .gh-pages",
+    "prepub": "./node_modules/.bin/gitbook build . .gh-pages && touch .gh-pages/.nojekyll",
     "local": "./node_modules/.bin/gitbook serve",
     "pub": "./node_modules/.bin/paypal-scripts gh-pages",
     "clean": "./node_modules/.bin/paypal-scripts clean && rm package-lock.json"
