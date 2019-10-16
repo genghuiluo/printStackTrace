@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Spark · Gitbook Demo</title>
+        <title>Learning Spark · Gitbook Demo</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -50,6 +50,8 @@
 
     
         
+        <link rel="stylesheet" href="../styles/website.css">
+        
     
         
     
@@ -73,10 +75,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="rdd.html" />
+    <link rel="next" href="debug_in_idea.html" />
     
-    
-    <link rel="prev" href="../" />
     
 
     </head>
@@ -112,8 +112,6 @@
 
     
         
-        <li class="header">BigData</li>
-        
         
     
         <li class="chapter " data-level="1.1" data-path="../">
@@ -121,7 +119,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    About This Handout
             
                 </a>
             
@@ -129,12 +127,65 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2" data-path="./">
+
+    
+        
+        <li class="header">Program Language</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Study Java
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    Study JavaScript
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    Study Python
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">BigData</li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="./">
             
                 <a href="./">
             
                     
-                    Spark
+                    Learning Spark
             
                 </a>
             
@@ -143,7 +194,20 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="rdd.html">
+        <li class="chapter " data-level="3.1.1" data-path="debug_in_idea.html">
+            
+                <a href="debug_in_idea.html">
+            
+                    
+                    Debug in IDEA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="rdd.html">
             
                 <a href="rdd.html">
             
@@ -156,7 +220,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="dataframe.html">
+        <li class="chapter " data-level="3.1.3" data-path="dataframe.html">
             
                 <a href="dataframe.html">
             
@@ -169,7 +233,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="dataset.html">
+        <li class="chapter " data-level="3.1.4" data-path="dataset.html">
             
                 <a href="dataset.html">
             
@@ -187,25 +251,18 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../hadoop/">
+        <li class="chapter " data-level="3.2" data-path="../hadoop/">
             
                 <a href="../hadoop/">
             
                     
-                    Hadoop
+                    Learning Hadoop
             
                 </a>
             
 
             
         </li>
-    
-
-    
-        
-        <li class="header">DataBase</li>
-        
-        
     
 
     
@@ -237,7 +294,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Spark</a>
+        <a href=".." >Learning Spark</a>
     </h1>
 </div>
 
@@ -252,7 +309,110 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h3 id="reference-links">Reference Links</h3>
+<ol>
+<li>Spark lastest version doc: <a href="http://spark.apache.org/docs/latest/" target="_blank">http://spark.apache.org/docs/latest/</a>. For historical versions, find <a href="http://spark.apache.org/documentation.html" target="_blank">here</a>.  </li>
+<li>Github repo of Apache Spark (<em>ASF, Apache Software Foundation</em>): <a href="https://github.com/apache/spark" target="_blank">https://github.com/apache/spark</a> . <a href="https://github.com/apache/spark/blob/master/CONTRIBUTING.md" target="_blank">Contribute it with your PR</a>!</li>
+<li>Submit a bug at <a href="https://issues.apache.org/jira/projects/SPARK/summary" target="_blank">https://issues.apache.org/jira/projects/SPARK/summary</a> .</li>
+<li>&#x300A;Learning Spark&#x300B;</li>
+</ol>
+<h3 id="what-is-spark-">What is Spark ?</h3>
+<blockquote>
+<p>Spark is a <code>___</code> ? Currently (these definitions are changable in developer community and updated overtime) we said ...</p>
+</blockquote>
+<ul>
+<li>Spark is a unified analytics engine for large-scale data processing. <blockquote>
+<p>&#x5173;&#x4E8E; <em>&#x662F;&#x4EC0;&#x4E48;&#x7684;&#x5B9A;&#x4E49;(what-is)</em> &#x65F6;&#x5E38;&#x968F;&#x7740;&#x5F00;&#x6E90;&#x9879;&#x76EE;&#x672C;&#x8EAB;&#x7684;&#x53D1;&#x5C55; PMC Member &#x4EEC;&#x4F1A;&#x8FDB;&#x884C;&#x8BA8;&#x8BBA;&#x3001;&#x8C03;&#x6574;(&#x4E0B;&#x4E00;&#x4E2A;Major Releasae), &#x7B80;&#x5355;&#x6765;&#x8BF4;, Spark&#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x8BA1;&#x7B97;&#x6846;&#x67B6;(&#x5F15;&#x64CE;), &#x5F88;&#x591A;&#x5F00;&#x53D1;&#x8005;&#x5E38;&#x559C;&#x6B22;&#x7528;&#x5B83;&#x548C;MapReduce&#x505A;&#x6BD4;&#x8F83;.</p>
+</blockquote>
+</li>
+<li>It provides high-level APIs in Scala, Java, Python, and R, and an optimized engine that supports general computation graphs(<strong>DAG, Directed Acyclic Graph</strong>) for data analysis. <blockquote>
+<p>&#x9AD8;&#x9636; API &#x53C8;&#x53EF;&#x4EE5;&#x5212;&#x5206;&#x4E3A; RDD / Dataset (Dataframe, Spark&gt;=2.0&#x4E4B;&#x540E; Dataframe API &#x548C; Dataset &#x8FDB;&#x884C;&#x4E86;&#x5408;&#x5E76;) 2&#x5927;&#x7C7B;, &#x540E;&#x8005;&#x662F;&#x793E;&#x533A;&#x53C2;&#x8003;&#x8457;&#x540D;&#x7684; Python &#x5305; Pandas &#x7684; API &#x8BBE;&#x8BA1;&#x98CE;&#x683C;(&#x66F4;&#x5229;&#x4E8E;&#x5206;&#x6790;&#x5E08;&#x4F7F;&#x7528;) &#x4E8C;&#x6B21;&#x5C01;&#x88C5; RDD API &#x5B9E;&#x73B0; </p>
+</blockquote>
+</li>
+<li>It also supports a rich set of higher-level tools including Spark SQL for SQL and DataFrames, MLlib for machine learning, GraphX for graph processing, and Structured Streaming for stream processing.<blockquote>
+<p>&#x9664;&#x4E86;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684; RDD/Dataset API &#x5F00;&#x53D1; Spark Applicaiton &#x4E4B;&#x5916;. Spark &#x8FD8;&#x63D0;&#x4F9B;&#x9488;&#x5BF9;&#x7279;&#x5B9A;&#x573A;&#x666F;&#x7684;&#x5185;&#x5D4C;&#x5E93;(built-in library).</p>
+<ol>
+<li>Structured Dataset Query &amp; SQL -- Spark SQL &#x5728;&#x6784;&#x5EFA;&#x73B0;&#x4EE3;&#x5316;&#x6570;&#x4ED3;&#x4E2D;&#x76F8;&#x5F53;&#x6D41;&#x884C;</li>
+<li>Structured Streaming -- Spark Streaming &#x7531;&#x4E8E; Spark2.0 &#x540E; Dataset API &#x7684;&#x7EDF;&#x4E00;, &#x4F7F;&#x5F97;Spark Streaming&#x53EF;&#x4EE5;&#x53D7;&#x5229;&#x4E8E;Spark SQL</li>
+<li>GraphX &#x56FE;&#x8BA1;&#x7B97;</li>
+<li>MLlib &#x673A;&#x5668;&#x5B66;&#x4E60;</li>
+</ol>
+</blockquote>
+</li>
+</ul>
+<h3 id="install-spark">Install Spark</h3>
+<p>Download spark via <a href="https://spark.apache.org/downloads.html" target="_blank">https://spark.apache.org/downloads.html</a> .</p>
+<p>Enusre you have JDK(&gt;=1.8) installed yet first (<code>java -version</code>). Since Spark uses Hadoop&#x2019;s client libraries for HDFS and YARN, you could : </p>
+<ul>
+<li>download a pr-built spark(aka binary version) with a specified hadoop version, e.g. Chose a package type &quot;Pre-built for Apache Hadoop 2.7 and later&quot;</li>
+<li><p>download a pr-built spark only (choose &quot;Pre-built with user-provided Apache Hadoop&quot;) and setup spark CLASSPATH like below.</p>
+<pre><code>  # download any hadoop binary version (e.g. 2.8.2) and setup Pseudo-Distributed &#x5355;&#x673A;&#x4F2A;&#x5206;&#x5E03;
+
+  # setup spark CLASSPATH
+  vi conf/spark-env.sh
+  export SPARK_DIST_CLASSPATH=$(hadoop classpath)
+</code></pre></li>
+<li>download spark source code (or clone from github), then build it with specified hadoop dependency</li>
+</ul>
+<p><strong>For version sepecific, YOU SHOULD KNOW</strong> :</p>
+<ol>
+<li>Spark runs on Java 8, Python 2.7+/3.4+ and R 3.1+. For the Scala API, Spark 2.4.4 uses Scala 2.12. You will need to use a compatible Scala version (2.12.x).</li>
+<li>Support for Java 7, Python 2.6 and old Hadoop versions before 2.6.5 were removed as of Spark 2.2.0.</li>
+<li>Support for Scala 2.10 was removed as of 2.3.0.</li>
+<li>Support for Scala 2.11 is deprecated as of Spark 2.4.1 and will be removed in Spark 3.0.</li>
+</ol>
+<h3 id="run-a-example-locally">Run a Example Locally</h3>
+<p>More details refer to <a href="https://spark.apache.org/docs/latest/submitting-applications.html" target="_blank">https://spark.apache.org/docs/latest/submitting-applications.html</a> .</p>
+<pre><code class="lang-bash">$ <span class="hljs-built_in">cd</span> spark-<span class="hljs-number">2.4</span>.<span class="hljs-number">4</span>-bin-hadoop2.<span class="hljs-number">7</span>
+
+$ ./bin/spark-submit --class org.apache.spark.examples.SparkPi \
+                     --master <span class="hljs-built_in">local</span>[<span class="hljs-number">2</span>] \
+                     examples/jars/spark-examples_2.<span class="hljs-number">11</span>-<span class="hljs-number">2.4</span>.<span class="hljs-number">4</span>.jar <span class="hljs-number">10</span>
+
+<span class="hljs-comment"># --class          &#x6307;&#x5B9A; spark app &#x7684;&#x5165;&#x53E3;&#x7C7B;, &#x5FC5;&#x987B;&#x5305;&#x542B; main &#x65B9;&#x6CD5;</span>
+<span class="hljs-comment"># --master         &#x6307;&#x5B9A; master URL, local[2] &#x8868;&#x793A; &#x672C;&#x5730;&#x6267;&#x884C; &amp; 2&#x4E2A;worker&#x7EBF;&#x7A0B;</span>
+<span class="hljs-comment"># examples/xxx.jar &#x6307;&#x5B9A; jar&#x5305; &#x8DEF;&#x5F84;</span>
+<span class="hljs-comment"># 10               &#x5165;&#x53E3;&#x7C7B; main &#x65B9;&#x6CD5;&#x63A5;&#x53D7;&#x7684;&#x53C2;&#x6570; String[] args</span>
+
+<span class="hljs-comment"># &#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x8BA1;&#x7B97;&#x5706;&#x5468;&#x7387;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4E0B;&#x9762;&#x662F;&#x90E8;&#x5206;STDOUT&#x6253;&#x5370;&#x51FA;&#x6765;&#x7684;&#x65E5;&#x5FD7;</span>
+...
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">06</span> INFO SparkContext: Submitted application: Spark Pi
+...
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">07</span> INFO Utils: Successfully started service <span class="hljs-string">&apos;sparkDriver&apos;</span> on port <span class="hljs-number">63772</span>.
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">07</span> INFO SparkEnv: Registering MapOutputTracker
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">07</span> INFO SparkEnv: Registering BlockManagerMaster
+...
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">07</span> INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy <span class="hljs-keyword">for</span> block replication policy
+...
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO SparkContext: Starting job: reduce at SparkPi.scala:<span class="hljs-number">38</span>
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO DAGScheduler: Got job <span class="hljs-number">0</span> (reduce at SparkPi.scala:<span class="hljs-number">38</span>) with <span class="hljs-number">2</span> output partitions
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO DAGScheduler: Final stage: ResultStage <span class="hljs-number">0</span> (reduce at SparkPi.scala:<span class="hljs-number">38</span>)
+...
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO TaskSchedulerImpl: Adding task <span class="hljs-built_in">set</span> <span class="hljs-number">0.0</span> with <span class="hljs-number">2</span> tasks
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO TaskSetManager: Starting task <span class="hljs-number">0.0</span> <span class="hljs-keyword">in</span> stage <span class="hljs-number">0.0</span> (TID <span class="hljs-number">0</span>, localhost, executor driver, partition <span class="hljs-number">0</span>, PROCESS_LOCAL, <span class="hljs-number">7866</span> bytes)
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO TaskSetManager: Starting task <span class="hljs-number">1.0</span> <span class="hljs-keyword">in</span> stage <span class="hljs-number">0.0</span> (TID <span class="hljs-number">1</span>, localhost, executor driver, partition <span class="hljs-number">1</span>, PROCESS_LOCAL, <span class="hljs-number">7866</span> bytes)
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO Executor: Running task <span class="hljs-number">0.0</span> <span class="hljs-keyword">in</span> stage <span class="hljs-number">0.0</span> (TID <span class="hljs-number">0</span>) <span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO Executor: Running task <span class="hljs-number">1.0</span> <span class="hljs-keyword">in</span> stage <span class="hljs-number">0.0</span> (TID <span class="hljs-number">1</span>)
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO Executor: Fetching spark://lm-shb-<span class="hljs-number">24502336</span>.paypalcorp.com:<span class="hljs-number">63772</span>/jars/spark-examples_2.<span class="hljs-number">11</span>-<span class="hljs-number">2.4</span>.<span class="hljs-number">4</span>.jar with timestamp <span class="hljs-number">1570605967610</span>
+...
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO Executor: Finished task <span class="hljs-number">0.0</span> <span class="hljs-keyword">in</span> stage <span class="hljs-number">0.0</span> (TID <span class="hljs-number">0</span>). <span class="hljs-number">824</span> bytes result sent to driver
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO TaskSetManager: Finished task <span class="hljs-number">0.0</span> <span class="hljs-keyword">in</span> stage <span class="hljs-number">0.0</span> (TID <span class="hljs-number">0</span>) <span class="hljs-keyword">in</span> <span class="hljs-number">292</span> ms on localhost (executor driver) (<span class="hljs-number">1</span>/<span class="hljs-number">2</span>)
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO TaskSetManager: Finished task <span class="hljs-number">1.0</span> <span class="hljs-keyword">in</span> stage <span class="hljs-number">0.0</span> (TID <span class="hljs-number">1</span>) <span class="hljs-keyword">in</span> <span class="hljs-number">274</span> ms on localhost (executor driver) (<span class="hljs-number">2</span>/<span class="hljs-number">2</span>)
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO TaskSchedulerImpl: Removed TaskSet <span class="hljs-number">0.0</span>, whose tasks have all completed, from pool 
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO DAGScheduler: ResultStage <span class="hljs-number">0</span> (reduce at SparkPi.scala:<span class="hljs-number">38</span>) finished <span class="hljs-keyword">in</span> <span class="hljs-number">0.538</span> s
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO DAGScheduler: Job <span class="hljs-number">0</span> finished: reduce at SparkPi.scala:<span class="hljs-number">38</span>, took <span class="hljs-number">0.600470</span> s
+Pi is roughly <span class="hljs-number">3.1421791421791423</span>
+...
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO MemoryStore: MemoryStore cleared
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO BlockManager: BlockManager stopped
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO BlockManagerMaster: BlockManagerMaster stopped
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO OutputCommitCoordinator<span class="hljs-variable">$OutputCommitCoordinatorEndpoint</span>: OutputCommitCoordinator stopped!
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO SparkContext: Successfully stopped SparkContext
+<span class="hljs-number">19</span>/<span class="hljs-number">10</span>/<span class="hljs-number">09</span> <span class="hljs-number">15</span>:<span class="hljs-number">26</span>:<span class="hljs-number">08</span> INFO ShutdownHookManager: Shutdown hook called
+</code></pre>
+<blockquote>
+<p>Next section, we will go through the inner process of a spark applicaiton after submitted.</p>
+</blockquote>
+
                                 
                                 </section>
                             
@@ -279,12 +439,8 @@
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
-                    <i class="fa fa-angle-left"></i>
-                </a>
                 
-                
-                <a href="rdd.html" class="navigation navigation-next " aria-label="Next page: RDD programming">
+                <a href="debug_in_idea.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Debug in IDEA">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -295,7 +451,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Spark","level":"1.2","depth":1,"next":{"title":"RDD programming","level":"1.2.1","depth":2,"path":"spark/rdd.md","ref":"spark/rdd.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"neutral"},"config":{"plugins":["back-to-top-button","expandable-chapters","-lunr","-search","search-pro","multipart","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search-pro":{},"multipart":{},"fontsettings":{"theme":"night","family":"serif","size":3},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Demo","links":{"sidebar":{"Star on Github":"https://github.com/genghuiluo/printStackTrace"}},"gitbook":"*"},"file":{"path":"spark/README.md","mtime":"2019-10-09T04:52:44.856Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-09T05:27:21.325Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Learning Spark","level":"3.1","depth":1,"next":{"title":"Debug in IDEA","level":"3.1.1","depth":2,"path":"spark/debug_in_idea.md","ref":"spark/debug_in_idea.md","articles":[]},"previous":{"title":"Study Python","level":"2.3","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","expandable-chapters","-lunr","-search","search-pro","multipart","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search-pro":{},"multipart":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Demo","links":{"sidebar":{"Star on Github":"https://github.com/genghuiluo/printStackTrace"}},"gitbook":"*"},"file":{"path":"spark/README.md","mtime":"2019-10-14T02:50:56.818Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-16T00:21:30.740Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

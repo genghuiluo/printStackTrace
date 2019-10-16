@@ -1,0 +1,614 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Debug in IDEA · Gitbook Demo</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-multipart/multipart.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="rdd.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://github.com/genghuiluo/printStackTrace" target="_blank" class="custom-link">Star on Github</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    About This Handout
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Program Language</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    Study Java
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    Study JavaScript
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    Study Python
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">BigData</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Learning Spark
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="3.1.1" data-path="debug_in_idea.html">
+            
+                <a href="debug_in_idea.html">
+            
+                    
+                    Debug in IDEA
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="rdd.html">
+            
+                <a href="rdd.html">
+            
+                    
+                    RDD programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="dataframe.html">
+            
+                <a href="dataframe.html">
+            
+                    
+                    Dataframe
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="dataset.html">
+            
+                <a href="dataset.html">
+            
+                    
+                    Dataset
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../hadoop/">
+            
+                <a href="../hadoop/">
+            
+                    
+                    Learning Hadoop
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Debug in IDEA</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="debug-in-idea">Debug in IDEA</h2>
+<p>We will submit SparkPi to simple Spark Standalone Cluster(one master + one worker) in client deploy mode.
+Utilize IDEA <strong>Remote debugger</strong>, we will go through the lifecycle of a spark applicaiton.</p>
+<blockquote>
+<p>Before we start, let&apos;s copy the original words from &#x300A;Learning Spark 2015&#x300B;- CHAPTER 7 &quot;Running on a Cluster&quot;.</p>
+</blockquote>
+<p>To summarize the concepts in this section, let&#x2019;s walk through the exact steps that occur when you run a Spark application on a cluster:</p>
+<ol>
+<li>The user submits an application using spark-submit.</li>
+<li>spark-submit launches the driver program and invokes the main() method specified by the user.</li>
+<li>The driver program contacts the cluster manager to ask for resources to launch executors.</li>
+<li>The cluster manager launches executors on behalf of the driver program.</li>
+<li>The driver process runs through the user application. Based on the RDD actions and transformations in the program, the driver sends work to executors in the form of tasks.</li>
+<li>Tasks are run on executor processes to compute and save results.</li>
+<li>If the driver&#x2019;s main() method exits or it calls SparkContext.stop(), it will termi&#x2010; nate the executors and release resources from the cluster manager. </li>
+</ol>
+<h4 id="step1-clone-source-code-and-import-into-idea">Step1: clone source code and import into IDEA</h4>
+<pre><code class="lang-bash">$ git <span class="hljs-built_in">clone</span> git@github.com:apache/spark.git spark-source-code
+$ <span class="hljs-built_in">cd</span> spark-source-code
+
+<span class="hljs-comment"># default is master brach which is 3.0.0 version, checkout to branch-2.4</span>
+$ git checkout --track origin/branch-<span class="hljs-number">2.4</span>  
+
+<span class="hljs-comment"># Open IDEA =&gt; Import project from existed source</span>
+</code></pre>
+<blockquote>
+<p>Spark is mainly written in Scala and you use different build tools like <code>maven</code>/<code>sbt</code>/<code>gradle</code>, we will use <code>maven</code> here.</p>
+</blockquote>
+<p>Wait for IDEA downloaded all dependencies via maven ... </p>
+<h4 id="step2-configure-idea-debugger">Step2: configure IDEA Debugger</h4>
+<p>Then add four <strong>Remote Debugger</strong> like below (Run =&gt; Edit Configuration). </p>
+<p><img src="../_images/spark/remote_debugger.png" alt=""></p>
+<p>You should set different and avaliable(not in bind already) ports for Debuggers to listen (default 5005). In our cases,</p>
+<pre><code>MasterDebugger =&gt; 5005
+WorkerDebugger =&gt; 5006
+DriverDebugger =&gt; 5007
+ExecutorDebugger =&gt; 5008
+</code></pre><p>Next, copy <code>conf/spark-env.sh.template</code> to a new environment variable configure file <code>conf/spark-env.sh</code> and add lines below to enable these Debuggers.</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># conf/spark-env.sh </span>
+
+SPARK_MASTER_OPTS=<span class="hljs-string">&quot;-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -Dspark.master.rest.enabled=true&quot;</span>
+SPARK_WORKER_OPTS=<span class="hljs-string">&quot;-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5006&quot;</span>
+SPARK_SUBMIT_OPTS=<span class="hljs-string">&quot;-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=5007&quot;</span>
+</code></pre>
+<h4 id="step3-start-a-simple-spark-standalone-cluster">Step3: start a simple Spark Standalone Cluster</h4>
+<pre><code>$ sbin/start-all.sh
+starting org.apache.spark.deploy.master.Master, logging to /xxx/spark-2.4.4-bin-hadoop2.7/logs/spark-geluo-org.apache.spark.deploy.master.xxx.out
+localhost: starting org.apache.spark.deploy.worker.Worker, logging to /xxx/spark-2.4.4-bin-hadoop2.7/logs/spark-geluo-org.apache.spark.deploy.worker.Worker-1-xxx.out
+
+# access web UI of Spark Master at http://localhost:8080
+</code></pre><p><img src="../_images/spark/spark_master_web_ui.png" alt=""></p>
+<h4 id="step4-submit-sparkpi">Step4: submit SparkPi</h4>
+<p>Start MasterDebugger and  WorkerDebugger in IDEA.</p>
+<pre><code class="lang-bash">$ ./bin/spark-submit --class org.apache.spark.examples.SparkPi \
+                     --master spark://localhost:<span class="hljs-number">7077</span> \
+                     --conf spark.executor.extraJavaOptions=<span class="hljs-string">&quot;-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5008&quot;</span> \
+                     --executor-memory=<span class="hljs-number">2</span>G --total-executor-cores=<span class="hljs-number">2</span> \
+                     examples/jars/spark-examples_2.<span class="hljs-number">11</span>-<span class="hljs-number">2.4</span>.<span class="hljs-number">4</span>.jar <span class="hljs-number">20</span>
+Listening <span class="hljs-keyword">for</span> transport dt_socket at address: <span class="hljs-number">5007</span>
+
+<span class="hljs-comment"># spark://localhost:7077 is the default master url(traditional RPC gateway) of Spark Master</span>
+<span class="hljs-comment"># --deploy-mode default is client</span>
+<span class="hljs-comment"># since we configure &quot;suspend=y&quot; only for DriverDebugger JVM parameter above, this app wouldn&apos;t lanuch until DriverDebugger started</span>
+</code></pre>
+<blockquote>
+<p><code>bin/spark-submit</code> and <code>sbin/start-all.sh</code> will both call <code>bin/spark-class</code> inside</p>
+</blockquote>
+<p><a href="https://github.com/apache/spark/blob/branch-2.4/launcher/src/main/java/org/apache/spark/launcher/Main.java" target="_blank">lanuncher =&gt; java =&gt; Main</a> is the entrance class used inside <code>bin/spark-class</code> to build cmd string.</p>
+<blockquote>
+<p>&#x53EF;&#x4EE5;&#x53D1;&#x73B0; conf/spark-env.sh &#x4E2D;&#x8BBE;&#x5B9A;&#x7684;2&#x4E2A;&#x73AF;&#x5883;&#x53D8;&#x91CF;, <code>SPARK_MASTER_OPTS</code> &amp; <code>SPARK_WORKER_OPTS</code> &#x662F;&#x751F;&#x6548;&#x7684;.</p>
+</blockquote>
+<ul>
+<li>For Spark Master, <code>java -cp &apos;xxx&apos; -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005 -Dspark.master.rest.enabled=true -Xmx1g org.apache.spark.deploy.master.Master --host LM-SHB-24502336 --port 7077 --webui-port 8080</code>.</li>
+<li>For Spark Worker, <code>java -cp &apos;xxx&apos; -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5006 -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://LM-SHB-24502336:7077</code>.</li>
+</ul>
+<blockquote>
+<p><code>SPARK_EXECUTOR_OPTS</code> &#x662F;&#x65E0;&#x6548;&#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;, &#x867D;&#x7136;&#x5B83;&#x4F9D;&#x65E7;&#x4FDD;&#x7559;&#x5728; <code>SparkClassCommandBuilder</code> switch-case &#x5206;&#x652F;&#x4E2D;&#xFF0C;&#x4F46;&#x662F; executor &#x8FDB;&#x7A0B;&#x7684;&#x542F;&#x52A8;&#x4E0D;&#x662F;&#x901A;&#x8FC7; <code>bin/spark-class</code>, &#x5982;&#x4E0B; Work &#x65E5;&#x5FD7;&#x4E2D;&#x6240;&#x793A; .</p>
+</blockquote>
+<pre><code>19/10/10 21:56:05 INFO ExecutorRunner: Launch command: &quot;java&quot; &quot;-cp&quot; &quot;/xxx/spark-2.4.4-bin-hadoop2.7/conf/:/xxx/spark-2.4.4-bin-hadoop2.7/jars/*&quot; &quot;-Xmx2048M&quot; &quot;-Dspark.driver.port=59711&quot; &quot;org.apache.spark.executor.CoarseGrainedExecutorBackend&quot; &quot;--driver-url&quot; &quot;spark://CoarseGrainedScheduler@192.168.0.7:59711&quot; &quot;--executor-id&quot; &quot;0&quot; &quot;--hostname&quot; &quot;192.168.0.7&quot; &quot;--cores&quot; &quot;2&quot; &quot;--app-id&quot; &quot;app-20191010215605-0000&quot; &quot;--worker-url&quot; &quot;spark://Worker@192.168.0.7:59617&quot;
+</code></pre><p>For <code>bin/spark-submit</code>, use <code>SparkSubmitCommandBuilder</code> instead of <code>SparkClassCommandBuilder</code> here. Build cmd result looks like: </p>
+<pre><code class="lang-bash">java -cp <span class="hljs-string">&apos;xxx&apos;</span> -agentlib:jdwp=transport=dt_socket,server=y,<span class="hljs-built_in">suspend</span>=y,address=<span class="hljs-number">5007</span> -Xmx1g org.apache.spark.deploy.SparkSubmit 
+<span class="hljs-comment"># same arguments which we pass to spark-submit above</span>
+--master spark://LM-SHB-<span class="hljs-number">24502336</span>:<span class="hljs-number">7077</span> 
+--conf spark.executor.extraJavaOptions=-agentlib:jdwp=transport=dt_socket,server=y,<span class="hljs-built_in">suspend</span>=n,address=<span class="hljs-number">5008</span> 
+--class org.apache.spark.examples.SparkPi 
+--executor-memory <span class="hljs-number">2</span>G --total-executor-cores <span class="hljs-number">2</span> 
+examples/jars/spark-examples_2.<span class="hljs-number">11</span>-<span class="hljs-number">2.4</span>.<span class="hljs-number">4</span>.jar <span class="hljs-number">20</span>`. 
+
+<span class="hljs-comment"># SPARK_SUBMIT_OPTS works here too.</span>
+</code></pre>
+<h4 id="step5-ready-">Step5: Ready !</h4>
+<p>You can set breakpoints in IDEA and start to debug source code of Spark now.</p>
+<p><a href="https://github.com/apache/spark/blob/branch-2.4/core/src/main/scala/org/apache/spark/deploy/SparkSubmit.scala" target="_blank">core =&gt; scala =&gt; deploy =&gt; SparkSubmit</a> is the entrance class of <code>spark-submit</code>.</p>
+<pre><code class="lang-scala"><span class="hljs-comment">// line 929</span>
+submit.doSubmit(args)
+
+
+<span class="hljs-comment">// line 76</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">doSubmit</span>(</span>args: <span class="hljs-type">Array</span>[<span class="hljs-type">String</span>]): <span class="hljs-type">Unit</span> = { 
+
+  <span class="hljs-comment">// &#x6784;&#x9020; SparkSubmitArguments &#x5BF9;&#x8C61; ( &#x5176;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F1A;&#x8FDB;&#x884C;&#x53C2;&#x6570;&#x9A8C;&#x8BC1; validateArguments() &#x7B49; )</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">appArgs</span> =</span> parseArguments(args)
+
+  appArgs.action <span class="hljs-keyword">match</span> {
+    <span class="hljs-keyword">case</span> <span class="hljs-type">SparkSubmitAction</span>.<span class="hljs-type">SUBMIT</span> =&gt; submit(appArgs, uninitLog)
+    <span class="hljs-keyword">case</span> <span class="hljs-type">SparkSubmitAction</span>.<span class="hljs-type">KILL</span> =&gt; kill(appArgs)
+    <span class="hljs-keyword">case</span> <span class="hljs-type">SparkSubmitAction</span>.<span class="hljs-type">REQUEST_STATUS</span> =&gt; requestStatus(appArgs)
+    <span class="hljs-keyword">case</span> <span class="hljs-type">SparkSubmitAction</span>.<span class="hljs-type">PRINT_VERSION</span> =&gt; printVersion()
+  }
+
+  <span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x4E3A; SUBMIT action &#x5373;&#x6B63;&#x5E38;&#x63D0;&#x4EA4;</span>
+  <span class="hljs-comment">// --kill &#x548C; --status &#x5206;&#x522B;&#x5BF9;&#x5E94; KILL &amp; REQUEST_STATUS action, &#x4EC5;&#x5728; standalone + cluster mode &#x4E0B;&#x751F;&#x6548;, &#x5E76;&#x4E14;&#x540E;&#x9762;&#x7684;&#x53C2;&#x6570;&#x4E3A;submitted driver id(&#x5982;&#x4E0B;)&#x800C;&#x4E0D;&#x662F;&#x5E38;&#x89C4;&#x7684;application id</span>
+  <span class="hljs-comment">// 19/10/15 12:46:41 INFO ClientEndpoint: Driver successfully submitted as driver-20191015124641-0000</span>
+
+  <span class="hljs-comment">// --version &#x5BF9;&#x5E94; PRINT_VERSION action &#x8C03;&#x7528; printVersion() &#x65B9;&#x6CD5;</span>
+  <span class="hljs-comment">// &#x5F53; &#x6CA1;&#x6709;&#x53C2;&#x6570; &#x6216; --help &#x6216; &#x65E0;&#x6548;&#x53C2;&#x6570;&#x65F6;&#xFF0C;&#x90FD;&#x4F1A;&#x8C03;&#x7528; SparkSubmitArguments &#x7684; printUsageAndExit() &#x65B9;&#x6CD5;&#x6253;&#x5370;&#x7528;&#x4F8B;&#x8BF4;&#x660E;&#x5E76;&#x9000;&#x51FA;</span>
+
+<span class="hljs-comment">// line 773</span>
+<span class="hljs-keyword">private</span> <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">runMain</span>(</span>args: <span class="hljs-type">SparkSubmitArguments</span>, uninitLog: <span class="hljs-type">Boolean</span>): <span class="hljs-type">Unit</span> = {
+  <span class="hljs-comment">// prepareSubmitEnvironment &#x5176;&#x5B9E;&#x505A;&#x4E86;&#x5F88;&#x591A;&#x4E8B;&#x60C5; (&#x6BD4;&#x5982;, &#x68C0;&#x67E5;&#x6307;&#x5B9A;&#x7684;cluster manager&#x548C;deploy mode&#x662F;&#x5426;&#x4E3A;&#x652F;&#x6301;&#x7684;&#x7EC4;&#x5408;, e.g. spark-shel &#x548C; spark-sql &#x5C31;&#x4E0D;&#x652F;&#x6301; cluster mode)</span>
+  <span class="hljs-comment">// &#x867D;&#x7136;&#x5B83;&#x6700;&#x7EC8;&#x53EA;&#x8FD4;&#x56DE;:</span>
+  <span class="hljs-comment">// 1. Driver &#x7684;&#x53C2;&#x6570;, e.g. 20</span>
+  <span class="hljs-comment">// 2. Driver &#x7684; classpath, e.g. /xxx/examples/jars/spark-examples_2.11-2.4.4.jar</span>
+  <span class="hljs-comment">// 3. &#x4ECE;&#x53C2;&#x6570;&#x548C;&#x5168;&#x5C40;&#x7684; properties &#x4E2D;&#x83B7;&#x53D6;&#x5E76;&#x6784;&#x9020;SparkConf(&#x8FD9;&#x662F;&#x4E0B;&#x4E00;&#x6B65;&#x6784;&#x9020;SparkContext&#x7684;&#x5FC5;&#x8981;&#x53C2;&#x6570;)</span>
+  <span class="hljs-comment">// 4. &#x5305;&#x542B; main &#x65B9;&#x6CD5;&#x7684;&#x5165;&#x53E3;&#x7C7B;&#x540D; (&#x5982;&#x679C;&#x662F;python application &#x6216;&#x8005;cluster deploy mode&#xFF0C;&#x90A3;&#x8BE5;&#x7C7B;&#x540D;&#x4E0D;&#x540C;&#x6B65;--class&#x6240;&#x6307;&#x5B9A;&#x7684;), </span>
+  <span class="hljs-comment">//   e.g. standalone cluster mode &#x8FD9;&#x91CC;&#x7684;&#x7C7B;&#x540D;&#x5C06;&#x662F; org.apache.spark.deploy.ClientApp </span>
+  <span class="hljs-comment">//   e.g. yarn cluster mode &#x8FD9;&#x91CC;&#x7684;&#x7C7B;&#x540D;&#x5C06;&#x662F; org.apache.spark.deploy.yarn.YarnClusterApplication</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> (</span>childArgs, childClasspath, sparkConf, childMainClass) = prepareSubmitEnvironment(args)
+
+    <span class="hljs-comment">// &#x5229;&#x7528;&#x53CD;&#x5C04;&#x8C03;&#x7528; &#x5165;&#x53E3;&#x7C7B;(child class) &#x7684; main &#x65B9;&#x6CD5; </span>
+    app.start(childArgs.toArray, sparkConf) 
+
+<span class="hljs-comment">// core =&gt; scala =&gt; deploy =&gt; SparkApplication</span>
+<span class="hljs-comment">// line 52</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">sysProps</span> =</span> conf.getAll.toMap
+  sysProps.foreach { <span class="hljs-keyword">case</span> (k, v) =&gt;
+    sys.props(k) = v
+  }
+  <span class="hljs-comment">//&#x5229;&#x7528; JVM System Property &#x4F20;&#x9012;&#x914D;&#x7F6E;&#x9879; e.g spark.master = spark://localhost:7077</span>
+
+  mainMethod.invoke(<span class="hljs-literal">null</span>, args)
+</code></pre>
+<p><a href="https://github.com/apache/spark/blob/branch-2.4/examples/src/main/scala/org/apache/spark/examples/SparkPi.scala" target="_blank">examples =&gt; scala =&gt; SparkPi</a>, invoke main function of Driver program.</p>
+<pre><code class="lang-scala">
+<span class="hljs-class"><span class="hljs-keyword">object</span> <span class="hljs-title">SparkPi</span> {</span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span>(</span>args: <span class="hljs-type">Array</span>[<span class="hljs-type">String</span>]) {
+    <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">spark</span> =</span> <span class="hljs-type">SparkSession</span>
+      .builder
+      .appName(<span class="hljs-string">&quot;Spark Pi&quot;</span>)
+      .getOrCreate()
+    <span class="hljs-comment">// &#x6784;&#x9020; SparkSession, The entry point to programming Spark with the Dataset and DataFrame API.</span>
+
+    <span class="hljs-comment">// parallelize &#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A; RDD &#x7ECF;&#x8FC7; map (&#x8F6C;&#x6362;--transformation) &#x548C; reduce (&#x52A8;&#x4F5C;--action)</span>
+    <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">count</span> =</span> spark.sparkContext.parallelize(<span class="hljs-number">1</span> until n, slices).map { i =&gt;
+      <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">x</span> =</span> random * <span class="hljs-number">2</span> - <span class="hljs-number">1</span>
+      <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">y</span> =</span> random * <span class="hljs-number">2</span> - <span class="hljs-number">1</span>
+      <span class="hljs-keyword">if</span> (x*x + y*y &lt;= <span class="hljs-number">1</span>) <span class="hljs-number">1</span> <span class="hljs-keyword">else</span> <span class="hljs-number">0</span>
+    }.reduce(_ + _)
+</code></pre>
+<p><a href="https://github.com/apache/spark/blob/branch-2.4/sql/core/src/main/scala/org/apache/spark/sql/SparkSession.scala" target="_blank">sql =&gt; core =&gt; scala =&gt; SparkSession</a></p>
+<pre><code class="lang-scala"><span class="hljs-comment">// line 901</span>
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">getOrCreate</span>(</span>): <span class="hljs-type">SparkSession</span> = synchronized {
+
+<span class="hljs-comment">// line 926</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">sparkContext</span> =</span> userSuppliedContext.getOrElse {
+
+    <span class="hljs-comment">// line 935</span>
+    <span class="hljs-comment">// SparkSession &#x5305;&#x542B;&#x4E00;&#x4E2A; SparkContext</span>
+    <span class="hljs-type">SparkContext</span>.getOrCreate(sparkConf)
+
+    <span class="hljs-comment">// line 957</span>
+    session = <span class="hljs-keyword">new</span> <span class="hljs-type">SparkSession</span>(sparkContext, <span class="hljs-type">None</span>, <span class="hljs-type">None</span>, extensions)
+...
+<span class="hljs-comment">// &#x56DE;&#x5230;&#x4E0A;&#x9762;&#x7684; Driver &#x7A0B;&#x5E8F;</span>
+</code></pre>
+<p><a href="https://github.com/apache/spark/blob/branch-2.4/core/src/main/scala/org/apache/spark/SparkContext.scala" target="_blank">core =&gt; scala =&gt; SparkContext</a></p>
+<pre><code class="lang-scala"><span class="hljs-comment">// line 2520</span>
+<span class="hljs-comment">// &#x5982;&#x679C;&#x627E;&#x4E0D;&#x5230;&#x4E00;&#x4E2A; active context (&#x6700;&#x591A;&#x53EA;&#x6709;&#x4E00;&#x4E2A;), &#x5219;&#x6784;&#x9020;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Spark Context</span>
+<span class="hljs-keyword">if</span> (activeContext.get() == <span class="hljs-literal">null</span>) {
+  setActiveContext(<span class="hljs-keyword">new</span> <span class="hljs-type">SparkContext</span>(config), allowMultipleContexts = <span class="hljs-literal">false</span>)
+
+<span class="hljs-comment">// line 424</span>
+<span class="hljs-comment">// &#x6784;&#x9020; SparkEnv, Holds all the runtime environment objects for a running Spark instance (either master or worker),</span>
+<span class="hljs-comment">// including the serializer, RpcEnv, block manager, map output tracker, etc.</span>
+  _env = createSparkEnv(_conf, isLocal, listenerBus)
+
+<span class="hljs-comment">// line 452</span>
+  <span class="hljs-comment">// &#x542F;&#x52A8; WebUI</span>
+  _ui.foreach(_.bind())
+  <span class="hljs-comment">// 19/10/15 13:47:14 INFO Utils: Successfully started service &apos;SparkUI&apos; on port 4040.</span>
+  <span class="hljs-comment">// 19/10/15 13:47:15 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://lm-shb-24502336.paypalcorp.com:4040 </span>
+
+<span class="hljs-comment">// line 493</span>
+  <span class="hljs-comment">// &#x6784;&#x9020; ScheduleBackend &amp; TaskScheduler</span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> (</span>sched, ts) = <span class="hljs-type">SparkContext</span>.createTaskScheduler(<span class="hljs-keyword">this</span>, master, deployMode)
+  <span class="hljs-comment">// &#x6784;&#x9020; DAGScheduler</span>
+  _dagScheduler = <span class="hljs-keyword">new</span> <span class="hljs-type">DAGScheduler</span>(<span class="hljs-keyword">this</span>)
+
+  <span class="hljs-comment">// &#x542F;&#x52A8; TaskScheduler &amp; ScheduleBackend (TaskScheduler&#x5305;&#x542B;&#x4E00;&#x4E2A;ScheduleBackend&#x548C;DAGScheduler&#x7684;&#x5F15;&#x7528;--reference)</span>
+  _taskScheduler.start()
+  <span class="hljs-comment">// &#x542F;&#x52A8;&#x4E4B;&#x540E;, Spark Master Web UI http://localhost:8088 Running Application &#x53EF;&#x4EE5;&#x770B;&#x5230; SparkPi &#x7684; RUNNING State &#x7684;&#x8BB0;&#x5F55;</span>
+
+  <span class="hljs-comment">// BlockManager</span>
+  _env.blockManager.initialize(_applicationId)
+
+  <span class="hljs-comment">// MetricSystem</span>
+  _env.metricsSystem.start()
+
+  <span class="hljs-comment">// Dynamic Allocation </span>
+  <span class="hljs-function"><span class="hljs-keyword">val</span> <span class="hljs-title">dynamicAllocationEnabled</span> =</span> <span class="hljs-type">Utils</span>.isDynamicAllocationEnabled(_conf)
+  <span class="hljs-comment">// &#x672A;&#x5F00;&#x542F; None</span>
+  _executorAllocationManager.foreach(_.start())
+
+...
+
+<span class="hljs-comment">// SparkContext &#x6784;&#x9020;&#x5B8C;&#x4E86;, &#x56DE;&#x5230;&#x4E0A;&#x9762;&#x7684; SparkSession &#x6784;&#x9020;&#x8FC7;&#x7A0B;</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Learning Spark">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="rdd.html" class="navigation navigation-next " aria-label="Next page: RDD programming">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Debug in IDEA","level":"3.1.1","depth":2,"next":{"title":"RDD programming","level":"3.1.2","depth":2,"path":"spark/rdd.md","ref":"spark/rdd.md","articles":[]},"previous":{"title":"Learning Spark","level":"3.1","depth":1,"path":"spark/README.md","ref":"spark/README.md","articles":[{"title":"Debug in IDEA","level":"3.1.1","depth":2,"path":"spark/debug_in_idea.md","ref":"spark/debug_in_idea.md","articles":[]},{"title":"RDD programming","level":"3.1.2","depth":2,"path":"spark/rdd.md","ref":"spark/rdd.md","articles":[]},{"title":"Dataframe","level":"3.1.3","depth":2,"path":"spark/dataframe.md","ref":"spark/dataframe.md","articles":[]},{"title":"Dataset","level":"3.1.4","depth":2,"path":"spark/dataset.md","ref":"spark/dataset.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["back-to-top-button","expandable-chapters","-lunr","-search","search-pro","multipart","splitter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"splitter":{},"search-pro":{},"multipart":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gitbook Demo","links":{"sidebar":{"Star on Github":"https://github.com/genghuiluo/printStackTrace"}},"gitbook":"*"},"file":{"path":"spark/debug_in_idea.md","mtime":"2019-10-16T00:20:36.973Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-16T00:21:30.740Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
